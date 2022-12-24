@@ -36,8 +36,8 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -46,7 +46,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -79,55 +79,65 @@
     <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\Binaries\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>..\Binaries\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;HPL\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\SDK\Include\;HPL\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fltk.lib;wsock32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\SDK\Include\;HPL\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -135,24 +145,84 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\SDK\Include\;HPL\Include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="HPL\AI\AI.cpp" />
-    <ClCompile Include="HPL\AI\AINodeContainer.cpp" />
-    <ClCompile Include="HPL\AI\AINodeGenerator.cpp" />
-    <ClCompile Include="HPL\AI\AStar.cpp" />
-    <ClCompile Include="HPL\AI\StateMachine.cpp" />
+    <ClCompile Include="Game\AttackHandler.cpp" />
+    <ClCompile Include="Game\ButtonHandler.cpp" />
+    <ClCompile Include="Game\CharacterMove.cpp" />
+    <ClCompile Include="Game\Credits.cpp" />
+    <ClCompile Include="Game\DeathMenu.cpp" />
+    <ClCompile Include="Game\DemoEndText.cpp" />
+    <ClCompile Include="Game\EffectHandler.cpp" />
+    <ClCompile Include="Game\FadeHandler.cpp" />
+    <ClCompile Include="Game\GameArea.cpp" />
+    <ClCompile Include="Game\GameDamageArea.cpp" />
+    <ClCompile Include="Game\GameEnemy.cpp" />
+    <ClCompile Include="Game\GameEnemy_Dog.cpp" />
+    <ClCompile Include="Game\GameEnemy_Spider.cpp" />
+    <ClCompile Include="Game\GameEnemy_Worm.cpp" />
+    <ClCompile Include="Game\GameEntity.cpp" />
+    <ClCompile Include="Game\GameForceArea.cpp" />
+    <ClCompile Include="Game\GameItem.cpp" />
+    <ClCompile Include="Game\GameItemType.cpp" />
+    <ClCompile Include="Game\GameLadder.cpp" />
+    <ClCompile Include="Game\GameLamp.cpp" />
+    <ClCompile Include="Game\GameLink.cpp" />
+    <ClCompile Include="Game\GameLiquidArea.cpp" />
+    <ClCompile Include="Game\GameMessageHandler.cpp" />
+    <ClCompile Include="Game\GameMusicHandler.cpp" />
+    <ClCompile Include="Game\GameObject.cpp" />
+    <ClCompile Include="Game\GameSaveArea.cpp" />
+    <ClCompile Include="Game\GameScripts.cpp" />
+    <ClCompile Include="Game\GameStickArea.cpp" />
+    <ClCompile Include="Game\GameSwingDoor.cpp" />
+    <ClCompile Include="Game\GameTypes.cpp" />
+    <ClCompile Include="Game\GraphicsHelper.cpp" />
+    <ClCompile Include="Game\HapticGameCamera.cpp" />
+    <ClCompile Include="Game\HudModel_Throw.cpp" />
+    <ClCompile Include="Game\HudModel_Weapon.cpp" />
+    <ClCompile Include="Game\Init.cpp" />
+    <ClCompile Include="Game\IntroStory.cpp" />
+    <ClCompile Include="Game\Inventory.cpp" />
+    <ClCompile Include="Game\Main.cpp" />
+    <ClCompile Include="Game\MainMenu.cpp" />
+    <ClCompile Include="Game\MapHandler.cpp" />
+    <ClCompile Include="Game\MapLoadText.cpp" />
+    <ClCompile Include="Game\Notebook.cpp" />
+    <ClCompile Include="Game\NumericalPanel.cpp" />
+    <ClCompile Include="Game\Player.cpp" />
+    <ClCompile Include="Game\PlayerHands.cpp" />
+    <ClCompile Include="Game\PlayerHelper.cpp" />
+    <ClCompile Include="Game\PlayerState_Interact.cpp" />
+    <ClCompile Include="Game\PlayerState_InteractHaptX.cpp" />
+    <ClCompile Include="Game\PlayerState_Misc.cpp" />
+    <ClCompile Include="Game\PlayerState_MiscHaptX.cpp" />
+    <ClCompile Include="Game\PlayerState_Weapon.cpp" />
+    <ClCompile Include="Game\PlayerState_WeaponHaptX.cpp" />
+    <ClCompile Include="Game\PreMenu.cpp" />
+    <ClCompile Include="Game\RadioHandler.cpp" />
+    <ClCompile Include="Game\SaveHandler.cpp" />
+    <ClCompile Include="Game\SaveTypes.cpp" />
+    <ClCompile Include="Game\StdAfx.cpp" />
+    <ClCompile Include="Game\TriggerHandler.cpp" />
+    <ClCompile Include="Game\Triggers.cpp" />
+    <ClCompile Include="HPL\Source\AI\AI.cpp" />
+    <ClCompile Include="HPL\Source\AI\AINodeContainer.cpp" />
+    <ClCompile Include="HPL\Source\AI\AINodeGenerator.cpp" />
+    <ClCompile Include="HPL\Source\AI\AStar.cpp" />
+    <ClCompile Include="HPL\Source\AI\StateMachine.cpp" />
     <ClCompile Include="HPL\Source\Game\Game.cpp" />
     <ClCompile Include="HPL\Source\Game\GameTypes.cpp" />
     <ClCompile Include="HPL\Source\Game\SaveGame.cpp" />
@@ -262,7 +332,6 @@
     <ClCompile Include="HPL\Source\Implementation\PhysicsJointSliderNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsMaterialNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsWorldNewton.cpp" />
-    <ClCompile Include="HPL\Source\Implementation\Platform\posix.cpp" />
     <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp" />
     <ClCompile Include="HPL\Source\Implementation\scriptstring.cpp" />
     <ClCompile Include="HPL\Source\Implementation\SDLBitmap2D.cpp" />
@@ -380,8 +449,94 @@
     <ClCompile Include="HPL\Source\System\SerializeClass.cpp" />
     <ClCompile Include="HPL\Source\System\String.cpp" />
     <ClCompile Include="HPL\Source\System\System.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_AudioData.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Buffer.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_CustomStream.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Device.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Effect.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_EffectSlot.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Effect_Reverb.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_EFX.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_EFXManager.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Filter.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Helper.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Init.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Loaders.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_LoggerObject.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_OggSample.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_OggStream.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Playback.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Sample.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Source.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_SourceManager.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Stream.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_Types.cpp" />
+    <ClCompile Include="OALWrapper\Source\OAL_WAVSample.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game\AttackHandler.h" />
+    <ClInclude Include="Game\ButtonHandler.h" />
+    <ClInclude Include="Game\CharacterMove.h" />
+    <ClInclude Include="Game\Credits.h" />
+    <ClInclude Include="Game\DeathMenu.h" />
+    <ClInclude Include="Game\DemoEndText.h" />
+    <ClInclude Include="Game\EffectHandler.h" />
+    <ClInclude Include="Game\FadeHandler.h" />
+    <ClInclude Include="Game\GameArea.h" />
+    <ClInclude Include="Game\GameDamageArea.h" />
+    <ClInclude Include="Game\GameEnemy.h" />
+    <ClInclude Include="Game\GameEnemy_Dog.h" />
+    <ClInclude Include="Game\GameEnemy_Spider.h" />
+    <ClInclude Include="Game\GameEnemy_Worm.h" />
+    <ClInclude Include="Game\GameEntity.h" />
+    <ClInclude Include="Game\GameForceArea.h" />
+    <ClInclude Include="Game\GameItem.h" />
+    <ClInclude Include="Game\GameItemType.h" />
+    <ClInclude Include="Game\GameLadder.h" />
+    <ClInclude Include="Game\GameLamp.h" />
+    <ClInclude Include="Game\GameLink.h" />
+    <ClInclude Include="Game\GameLiquidArea.h" />
+    <ClInclude Include="Game\GameMessageHandler.h" />
+    <ClInclude Include="Game\GameMusicHandler.h" />
+    <ClInclude Include="Game\GameObject.h" />
+    <ClInclude Include="Game\GameSaveArea.h" />
+    <ClInclude Include="Game\GameScripts.h" />
+    <ClInclude Include="Game\GameStickArea.h" />
+    <ClInclude Include="Game\GameSwingDoor.h" />
+    <ClInclude Include="Game\GameTypes.h" />
+    <ClInclude Include="Game\GlobalInit.h" />
+    <ClInclude Include="Game\GraphicsHelper.h" />
+    <ClInclude Include="Game\HapticGameCamera.h" />
+    <ClInclude Include="Game\HudModel_Throw.h" />
+    <ClInclude Include="Game\HudModel_Weapon.h" />
+    <ClInclude Include="Game\Init.h" />
+    <ClInclude Include="Game\IntroStory.h" />
+    <ClInclude Include="Game\Inventory.h" />
+    <ClInclude Include="Game\MainMenu.h" />
+    <ClInclude Include="Game\MapHandler.h" />
+    <ClInclude Include="Game\MapLoadText.h" />
+    <ClInclude Include="Game\Notebook.h" />
+    <ClInclude Include="Game\NumericalPanel.h" />
+    <ClInclude Include="Game\Player.h" />
+    <ClInclude Include="Game\PlayerHands.h" />
+    <ClInclude Include="Game\PlayerHelper.h" />
+    <ClInclude Include="Game\PlayerMoveStates.h" />
+    <ClInclude Include="Game\PlayerState.h" />
+    <ClInclude Include="Game\PlayerState_Interact.h" />
+    <ClInclude Include="Game\PlayerState_InteractHaptX.h" />
+    <ClInclude Include="Game\PlayerState_Misc.h" />
+    <ClInclude Include="Game\PlayerState_MiscHaptX.h" />
+    <ClInclude Include="Game\PlayerState_Weapon.h" />
+    <ClInclude Include="Game\PlayerState_WeaponHaptX.h" />
+    <ClInclude Include="Game\PreMenu.h" />
+    <ClInclude Include="Game\RadioHandler.h" />
+    <ClInclude Include="Game\resource.h" />
+    <ClInclude Include="Game\SaveHandler.h" />
+    <ClInclude Include="Game\SaveTypes.h" />
+    <ClInclude Include="Game\StdAfx.h" />
+    <ClInclude Include="Game\TriggerHandler.h" />
+    <ClInclude Include="Game\Triggers.h" />
+    <ClInclude Include="Game\Version.h" />
     <ClInclude Include="HPL\Include\AI\AI.h" />
     <ClInclude Include="HPL\Include\AI\AINodeContainer.h" />
     <ClInclude Include="HPL\Include\AI\AINodeGenerator.h" />
@@ -654,6 +809,31 @@
     <ClInclude Include="HPL\Include\System\String.h" />
     <ClInclude Include="HPL\Include\System\System.h" />
     <ClInclude Include="HPL\Include\System\SystemTypes.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_AudioData.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Buffer.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_CustomStream.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Device.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Effect.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_EffectSlot.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Effect_Reverb.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_EFX.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_EFXManager.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Filter.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Funcs.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Helper.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Init.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Loaders.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_LoggerObject.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_LowLevelObject.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_OggSample.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_OggStream.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Playback.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Sample.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Source.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_SourceManager.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Stream.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_Types.h" />
+    <ClInclude Include="OALWrapper\Include\OAL_WAVSample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

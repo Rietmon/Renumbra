@@ -30,7 +30,7 @@
 #undef DestroyAll
 
 #include "graphics/LowLevelGraphics.h"
-#include "impl/SDLPixelFormat.h"
+#include "implementation/SDLPixelFormat.h"
 #include "math/MathTypes.h"
 
 

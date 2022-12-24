@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/Platform.h"
+#include "implementation/Platform.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>

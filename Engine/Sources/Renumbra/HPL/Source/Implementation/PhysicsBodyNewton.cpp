@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/PhysicsBodyNewton.h"
+#include "implementation/PhysicsBodyNewton.h"
 
-#include "impl/CollideShapeNewton.h"
-#include "impl/PhysicsWorldNewton.h"
-#include "impl/PhysicsMaterialNewton.h"
+#include "implementation/CollideShapeNewton.h"
+#include "implementation/PhysicsWorldNewton.h"
+#include "implementation/PhysicsMaterialNewton.h"
 #include "system/LowLevelSystem.h"
 #include "graphics/LowLevelGraphics.h"
 #include "math/Math.h"

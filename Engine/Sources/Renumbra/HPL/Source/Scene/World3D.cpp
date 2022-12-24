@@ -18,7 +18,7 @@
  */
 #include "scene/World3D.h"
 
-#include "impl/tinyXML/tinyxml.h"
+#include "implementation/tinyXML/tinyxml.h"
 
 #include "system/Script.h"
 #include "system/String.h"

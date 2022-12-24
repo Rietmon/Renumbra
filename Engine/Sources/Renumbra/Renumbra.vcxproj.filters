@@ -100,23 +100,20 @@
     <Filter Include="HPL\Include\Physics">
       <UniqueIdentifier>{77e5c915-a52f-4baf-90df-558cf907d7bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="OALWrapper">
+      <UniqueIdentifier>{85118f9e-cf40-45d7-9d77-7f6a40c06c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OALWrapper\Include">
+      <UniqueIdentifier>{a129a1f0-bca7-4216-a2dc-ba694f723627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OALWrapper\Source">
+      <UniqueIdentifier>{d8c4bc1d-833e-42d2-ae6c-ba1ce33126a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{db192bd7-7498-422a-b112-b2f58b7fd13d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HPL\AI\AI.cpp">
-      <Filter>HPL\Source\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\AI\AINodeContainer.cpp">
-      <Filter>HPL\Source\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\AI\AINodeGenerator.cpp">
-      <Filter>HPL\Source\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\AI\AStar.cpp">
-      <Filter>HPL\Source\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\AI\StateMachine.cpp">
-      <Filter>HPL\Source\AI</Filter>
-    </ClCompile>
     <ClCompile Include="HPL\Source\Game\Game.cpp">
       <Filter>HPL\Source\Game</Filter>
     </ClCompile>
@@ -356,9 +353,6 @@
     </ClCompile>
     <ClCompile Include="HPL\Source\Haptic\Haptic.cpp">
       <Filter>HPL\Source\Haptic</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\Source\Implementation\Platform\posix.cpp">
-      <Filter>HPL\Source\Implementation\Platform</Filter>
     </ClCompile>
     <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp">
       <Filter>HPL\Source\Implementation\Platform</Filter>
@@ -797,6 +791,267 @@
     </ClCompile>
     <ClCompile Include="HPL\Source\System\Container.cpp">
       <Filter>HPL\Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="HPL\Source\AI\AINodeGenerator.cpp">
+      <Filter>HPL\Source\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPL\Source\AI\AStar.cpp">
+      <Filter>HPL\Source\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPL\Source\AI\StateMachine.cpp">
+      <Filter>HPL\Source\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPL\Source\AI\AI.cpp">
+      <Filter>HPL\Source\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPL\Source\AI\AINodeContainer.cpp">
+      <Filter>HPL\Source\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_EFX.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_EFXManager.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Filter.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Helper.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Init.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Loaders.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_LoggerObject.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_OggSample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_OggStream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Playback.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Sample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Source.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_SourceManager.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Stream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Types.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_WAVSample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_AudioData.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Buffer.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_CustomStream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Device.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Effect.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Effect_Reverb.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_EffectSlot.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Player.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerHands.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerHelper.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_Interact.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_InteractHaptX.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_Misc.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_MiscHaptX.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_Weapon.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayerState_WeaponHaptX.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PreMenu.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\RadioHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SaveHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\SaveTypes.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\StdAfx.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TriggerHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Triggers.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\AttackHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\ButtonHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\CharacterMove.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Credits.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DeathMenu.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DemoEndText.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\EffectHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\FadeHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameDamageArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameEnemy.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameEnemy_Dog.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameEnemy_Spider.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameEnemy_Worm.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameEntity.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameForceArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameItem.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameItemType.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameLadder.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameLamp.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameLink.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameLiquidArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMessageHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameMusicHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameSaveArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameScripts.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameStickArea.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameSwingDoor.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameTypes.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GraphicsHelper.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\HapticGameCamera.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\HudModel_Throw.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\HudModel_Weapon.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Init.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\IntroStory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Inventory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MainMenu.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MapHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MapLoadText.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Notebook.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\NumericalPanel.cpp">
+      <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1615,6 +1870,270 @@
     </ClInclude>
     <ClInclude Include="HPL\Include\HPL.h">
       <Filter>HPL\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_AudioData.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Buffer.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_CustomStream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Device.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Effect.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Effect_Reverb.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EffectSlot.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EFX.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EFXManager.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Filter.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Funcs.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Helper.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Init.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Loaders.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_LoggerObject.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_LowLevelObject.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_OggSample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_OggStream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Playback.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Sample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Source.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_SourceManager.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Stream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Types.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_WAVSample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\NumericalPanel.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerHands.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerHelper.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerMoveStates.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_Interact.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_InteractHaptX.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_Misc.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_MiscHaptX.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_Weapon.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerState_WeaponHaptX.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PreMenu.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\RadioHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\resource.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SaveHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\SaveTypes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\StdAfx.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TriggerHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Triggers.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Version.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\AttackHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\ButtonHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\CharacterMove.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Credits.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DeathMenu.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DemoEndText.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\EffectHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\FadeHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameDamageArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEnemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEnemy_Dog.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEnemy_Spider.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEnemy_Worm.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameEntity.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameForceArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameItem.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameItemType.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameLadder.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameLamp.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameLink.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameLiquidArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMessageHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameMusicHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameSaveArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameScripts.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameStickArea.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameSwingDoor.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameTypes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GlobalInit.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GraphicsHelper.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\HapticGameCamera.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\HudModel_Throw.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\HudModel_Weapon.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Init.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\IntroStory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Inventory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MainMenu.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MapHandler.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MapLoadText.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Notebook.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

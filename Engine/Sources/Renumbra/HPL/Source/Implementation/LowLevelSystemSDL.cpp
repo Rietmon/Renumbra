@@ -41,13 +41,13 @@
 #include <fstream>
 #include <string>
 
-#include "impl/LowLevelSystemSDL.h"
-#include "impl/SqScript.h"
+#include "implementation/LowLevelSystemSDL.h"
+#include "implementation/SqScript.h"
 
 #include "SDL/SDL.h"
 
-#include "impl/stdstring.h"
-#include "impl/scriptstring.h"
+#include "implementation/stdstring.h"
+#include "implementation/scriptstring.h"
 
 #include "system/String.h"
 

@@ -18,9 +18,9 @@
  */
 #pragma comment(lib, "newton.lib")
 
-#include "impl/LowLevelPhysicsNewton.h"
+#include "implementation/LowLevelPhysicsNewton.h"
 
-#include "impl/PhysicsWorldNewton.h"
+#include "implementation/PhysicsWorldNewton.h"
 #include "system/LowLevelSystem.h"
 
 namespace hpl {

@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/SqScript.h"
+#include "implementation/SqScript.h"
 #include "system/LowLevelSystem.h"
 #include "system/String.h"
 #include "math/Math.h"
-#include "impl/Platform.h"
+#include "implementation/Platform.h"
 #include <stdio.h>
 
 namespace hpl {

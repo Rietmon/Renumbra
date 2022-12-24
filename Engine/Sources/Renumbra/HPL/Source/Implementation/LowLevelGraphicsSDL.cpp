@@ -29,16 +29,16 @@
 #include <stdlib.h>
 
 #include "graphics/FontData.h"
-#include "impl/LowLevelGraphicsSDL.h"
-#include "impl/SDLBitmap2D.h"
-#include "impl/SDLFontData.h"
-#include "impl/SDLTexture.h"
-#include "impl/CGProgram.h"
+#include "implementation/LowLevelGraphicsSDL.h"
+#include "implementation/SDLBitmap2D.h"
+#include "implementation/SDLFontData.h"
+#include "implementation/SDLTexture.h"
+#include "implementation/CGProgram.h"
 #include "system/LowLevelSystem.h"
-#include "impl/VertexBufferOGL.h"
-#include "impl/VertexBufferVBO.h"
+#include "implementation/VertexBufferOGL.h"
+#include "implementation/VertexBufferVBO.h"
 
-#include "impl/OcclusionQueryOGL.h"
+#include "implementation/OcclusionQueryOGL.h"
 
 namespace hpl {
 

@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/SDLFontData.h"
+#include "implementation/SDLFontData.h"
 #include "graphics/GraphicsDrawer.h"
 #include "system/LowLevelSystem.h"
-#include "impl/SDLBitmap2D.h"
-#include "impl/tinyXML/tinyxml.h"
+#include "implementation/SDLBitmap2D.h"
+#include "implementation/tinyXML/tinyxml.h"
 
 namespace hpl {
 

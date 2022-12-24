@@ -20,9 +20,9 @@
 #define HPL_SDL_TEXTURE_H
 
 #include "graphics/Texture.h"
-#include "impl/PBuffer.h"
-#include "impl/LowLevelGraphicsSDL.h"
-#include "impl/SDLBitmap2D.h"
+#include "implementation/PBuffer.h"
+#include "implementation/LowLevelGraphicsSDL.h"
+#include "implementation/SDLBitmap2D.h"
 
 #include <GL/GLee.h>
 #if defined(__APPLE__)&&defined(__MACH__)

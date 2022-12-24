@@ -20,7 +20,7 @@
 #define HPL_PHYSICS_JOINT_BALL_NEWTON_H
 
 #include "physics/PhysicsJointBall.h"
-#include "impl/PhysicsJointNewton.h"
+#include "implementation/PhysicsJointNewton.h"
 
 namespace hpl {
 

@@ -16,12 +16,12 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/PhysicsJointHingeNewton.h"
+#include "implementation/PhysicsJointHingeNewton.h"
 
 #include "system/LowLevelSystem.h"
 
-#include "impl/PhysicsBodyNewton.h"
-#include "impl/PhysicsWorldNewton.h"
+#include "implementation/PhysicsBodyNewton.h"
+#include "implementation/PhysicsWorldNewton.h"
 
 #include "math/Math.h"
 

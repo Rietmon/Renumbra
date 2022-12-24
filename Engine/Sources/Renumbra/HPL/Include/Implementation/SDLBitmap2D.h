@@ -20,7 +20,7 @@
 #define HPL_SDL_BITMAP2D_H
 
 #include "graphics/Bitmap2D.h"
-#include "impl/SDLPixelFormat.h"
+#include "implementation/SDLPixelFormat.h"
 
 #include "SDL/SDL.h"
 

@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/KeyboardSDL.h"
+#include "implementation/KeyboardSDL.h"
 
 #include "SDL/SDL.h"
 
-#include "impl/LowLevelInputSDL.h"
+#include "implementation/LowLevelInputSDL.h"
 
 #ifdef WIN32
 #include <conio.h>

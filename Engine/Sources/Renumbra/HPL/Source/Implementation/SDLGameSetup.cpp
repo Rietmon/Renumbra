@@ -21,17 +21,17 @@
 #pragma comment(lib, "SDLmain.lib")
 #endif
 
-#include "impl/SDLGameSetup.h"
-#include "impl/KeyboardSDL.h"
-#include "impl/MouseSDL.h"
-#include "impl/LowLevelGraphicsSDL.h"
-#include "impl/LowLevelResourcesSDL.h"
-#include "impl/LowLevelSystemSDL.h"
-#include "impl/LowLevelInputSDL.h"
-#include "impl/LowLevelSoundOpenAL.h"
-#include "impl/LowLevelPhysicsNewton.h"
+#include "implementation/SDLGameSetup.h"
+#include "implementation/KeyboardSDL.h"
+#include "implementation/MouseSDL.h"
+#include "implementation/LowLevelGraphicsSDL.h"
+#include "implementation/LowLevelResourcesSDL.h"
+#include "implementation/LowLevelSystemSDL.h"
+#include "implementation/LowLevelInputSDL.h"
+#include "implementation/LowLevelSoundOpenAL.h"
+#include "implementation/LowLevelPhysicsNewton.h"
 #ifdef INCLUDE_HAPTIC
-#include "impl/LowLevelHapticHaptX.h"
+#include "implementation/LowLevelHapticHaptX.h"
 #endif
 #include "haptic/Haptic.h"
 

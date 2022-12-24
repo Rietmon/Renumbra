@@ -42,7 +42,7 @@
 
 #include "system/LowLevelSystem.h"
 
-#include "impl/tinyXML/tinyxml.h"
+#include "implementation/tinyXML/tinyxml.h"
 
 namespace hpl {
 

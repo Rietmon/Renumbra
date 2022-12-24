@@ -16,8 +16,8 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/PBuffer.h"
-#include "impl/LowLevelGraphicsSDL.h"
+#include "implementation/PBuffer.h"
+#include "implementation/LowLevelGraphicsSDL.h"
 #include "system/LowLevelSystem.h"
 
 

@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/MeshLoaderCollada.h"
+#include "implementation/MeshLoaderCollada.h"
 
 #include "system/LowLevelSystem.h"
 #include "graphics/LowLevelGraphics.h"
@@ -63,7 +63,7 @@
 #include "haptic/HapticSurface.h"
 #include "haptic/LowLevelHaptic.h"
 
-#include "impl/tinyXML/tinyxml.h"
+#include "implementation/tinyXML/tinyxml.h"
 
 #include "math/Math.h"
 

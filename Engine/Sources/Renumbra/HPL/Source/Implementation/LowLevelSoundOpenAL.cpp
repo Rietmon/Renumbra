@@ -17,17 +17,17 @@
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "impl/LowLevelSoundOpenAL.h"
+#include "implementation/LowLevelSoundOpenAL.h"
 #include "system/String.h"
-#include "impl/OpenALSoundData.h"
-#include "impl/OpenALSoundEnvironment.h"
+#include "implementation/OpenALSoundData.h"
+#include "implementation/OpenALSoundEnvironment.h"
 
 #include "math/Math.h"
 
 #include "system/LowLevelSystem.h"
 
-#include "OALWrapper/OAL_Funcs.h"
-#include "OALWrapper/OAL_Effect_Reverb.h"
+#include "OAL_Funcs.h"
+#include "OAL_Effect_Reverb.h"
 
 namespace hpl {
 

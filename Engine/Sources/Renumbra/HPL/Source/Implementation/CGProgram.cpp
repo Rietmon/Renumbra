@@ -16,8 +16,8 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/CGProgram.h"
-#include "impl/SDLTexture.h"
+#include "implementation/CGProgram.h"
+#include "implementation/SDLTexture.h"
 #include "system/LowLevelSystem.h"
 
 #include "system/String.h"

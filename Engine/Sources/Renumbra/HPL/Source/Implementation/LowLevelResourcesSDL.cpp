@@ -20,14 +20,14 @@
 #pragma comment(lib, "SDL_image.lib")
 #endif
 
-#include "impl/LowLevelResourcesSDL.h"
-#include "impl/SDLBitmap2D.h"
-#include "impl/MeshLoaderMSH.h"
-#include "impl/MeshLoaderCollada.h"
+#include "implementation/LowLevelResourcesSDL.h"
+#include "implementation/SDLBitmap2D.h"
+#include "implementation/MeshLoaderMSH.h"
+#include "implementation/MeshLoaderCollada.h"
 #ifdef INCLUDE_THEORA
-#include "impl/VideoStreamTheora.h"
+#include "implementation/VideoStreamTheora.h"
 #endif
-#include "impl/Platform.h"
+#include "implementation/Platform.h"
 #include "system/String.h"
 
 #include "SDL/SDL.h"

@@ -16,9 +16,9 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/OpenALSoundData.h"
+#include "implementation/OpenALSoundData.h"
 #include "system/LowLevelSystem.h"
-#include "impl/OpenALSoundChannel.h"
+#include "implementation/OpenALSoundChannel.h"
 namespace hpl {
 
 	//////////////////////////////////////////////////////////////////////////

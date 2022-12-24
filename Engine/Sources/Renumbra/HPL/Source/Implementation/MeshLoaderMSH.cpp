@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with HPL1 Engine.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "impl/MeshLoaderMSH.h"
+#include "implementation/MeshLoaderMSH.h"
 
 #include "system/LowLevelSystem.h"
 #include "graphics/LowLevelGraphics.h"
@@ -28,7 +28,7 @@
 #include "resources/MaterialManager.h"
 #include "graphics/Material.h"
 
-#include "impl/tinyXML/tinyxml.h"
+#include "implementation/tinyXML/tinyxml.h"
 
 #include "math/Math.h"
 

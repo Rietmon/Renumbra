@@ -1,6 +1,6 @@
 #include <assert.h>
 #include <sstream>
-#include "impl/stdstring.h"
+#include "implementation/stdstring.h"
 using namespace std;
 
 static string StringFactory(asUINT length, const char *s)

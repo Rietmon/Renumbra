@@ -23,8 +23,8 @@
 #include <unistd.h>
 #endif
 #include <Newton.h>
-#include "impl/PhysicsWorldNewton.h"
-#include "impl/PhysicsBodyNewton.h"
+#include "implementation/PhysicsWorldNewton.h"
+#include "implementation/PhysicsBodyNewton.h"
 
 #include "system/LowLevelSystem.h"
 

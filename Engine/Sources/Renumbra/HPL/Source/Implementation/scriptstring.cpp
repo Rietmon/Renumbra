@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <string.h>
 #include <sstream>
-#include "impl/scriptstring.h"
+#include "implementation/scriptstring.h"
 using namespace std;
 
 BEGIN_AS_NAMESPACE

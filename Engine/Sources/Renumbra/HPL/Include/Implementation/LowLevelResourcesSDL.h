@@ -20,7 +20,7 @@
 #define HPL_LOWLEVELRESOURCES_SDL_H
 
 #include "resources/LowLevelResources.h"
-#include "impl/LowLevelGraphicsSDL.h"
+#include "implementation/LowLevelGraphicsSDL.h"
 #include "system/SystemTypes.h"
 
 namespace hpl {
