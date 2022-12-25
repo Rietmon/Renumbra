@@ -22,7 +22,7 @@
 #include <list>
 
 #include "system/SystemTypes.h"
-#include "game/GameTypes.h"
+#include "game/EngineTypes.h"
 
 #include "game/Updateable.h"
 #include "scene/Camera3D.h"

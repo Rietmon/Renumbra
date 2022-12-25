@@ -1,6 +1,0 @@
-<Material>
-  <Main Type="Additive" PhysicsMaterial="Default" UseAlpha="False" DepthTest="False" />
-  <TextureUnits>
-    <Diffuse File="light_white_halo02.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="" />
-  </TextureUnits>
-</Material>

@@ -1,6 +1,0 @@
-<Material>
-  <Main Type="Additive" PhysicsMaterial="Default" UseAlpha="False" DepthTest="True" />
-  <TextureUnits>
-    <Diffuse File="white_lightray.jpg" Compress="false" Type="2D" Mipmaps="true" Wrap="Repeat" AnimMode="None" AnimFrameTime="1" />
-  </TextureUnits>
-</Material>

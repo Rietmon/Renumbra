@@ -452,8 +452,8 @@ bool cInit::Init(tString asCommandLine)
 
 	// LANGUAGE ////////////////////////////////
 	mpGame->GetResources()->SetLanguageFile(msLanguageFile);
-
-	Log("Initializing Penumbra: Overture Remastered");
+	Log("Initializing \"Renumbra\"");
+	//Log("Initializing "PRODUCT_NAME"\n  Version\t"PRODUCT_VERSION"\n  Date\t"PRODUCT_DATE"\n");
 	//////////////////////////////////////////////7
 	// Check if computer supports game
 	if(CheckSupport(this)==false) return false;

@@ -2513,7 +2513,7 @@ void cMainMenu::SetActive(bool abX)
 		}
 		else
 		{
-			mpInit->mpGame->GetSound()->GetMusicHandler()->Play("music_theme.ogg",1,5.0f,false);
+			mpInit->mpGame->GetSound()->GetMusicHandler()->Play("music_theme.ogg",1,100.0f,false);
 			
 			if(pSoundHandler->IsPlaying("gui_rain1")==false)
 				pSoundHandler->PlayGui("gui_rain1",true,1);

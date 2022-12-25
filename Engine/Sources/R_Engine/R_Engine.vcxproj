@@ -166,6 +166,7 @@
     <ClCompile Include="HPL\Source\AI\AStar.cpp" />
     <ClCompile Include="HPL\Source\AI\StateMachine.cpp" />
     <ClCompile Include="HPL\Source\Game\Game.cpp" />
+    <ClCompile Include="HPL\Source\Game\EngineTypes.cpp" />
     <ClCompile Include="HPL\Source\Game\SaveGame.cpp" />
     <ClCompile Include="HPL\Source\Game\ScriptFuncs.cpp" />
     <ClCompile Include="HPL\Source\Game\Updater.cpp" />
@@ -273,6 +274,7 @@
     <ClCompile Include="HPL\Source\Implementation\PhysicsJointSliderNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsMaterialNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsWorldNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp" />
     <ClCompile Include="HPL\Source\Implementation\scriptstring.cpp" />
     <ClCompile Include="HPL\Source\Implementation\SDLBitmap2D.cpp" />
     <ClCompile Include="HPL\Source\Implementation\SDLFontData.cpp" />
@@ -397,6 +399,7 @@
     <ClInclude Include="HPL\Include\AI\AStar.h" />
     <ClInclude Include="HPL\Include\AI\StateMachine.h" />
     <ClInclude Include="HPL\Include\Game\Game.h" />
+    <ClInclude Include="HPL\Include\Game\EngineTypes.h" />
     <ClInclude Include="HPL\Include\Game\LowLevelGameSetup.h" />
     <ClInclude Include="HPL\Include\Game\SaveGame.h" />
     <ClInclude Include="HPL\Include\Game\ScriptFuncs.h" />

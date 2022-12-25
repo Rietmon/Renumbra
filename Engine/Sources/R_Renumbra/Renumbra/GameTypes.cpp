@@ -16,8 +16,8 @@
  * You should have received a copy of the GNU General Public License
  * along with Penumbra Overture.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 #include "GameTypes.h"
+
 #include "GameEntity.h"
 
 //////////////////////////////////////////////////////////////////////////
