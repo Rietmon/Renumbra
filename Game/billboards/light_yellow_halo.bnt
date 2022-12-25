@@ -1,0 +1,11 @@
+<BILLBOARD>
+	<MAIN
+		Material = "light_yellow_halo.mat"
+		Type = "point"
+		UseOffset = "False"
+		
+		IsHalo = "True"
+		HaloSourceIsParent = "false"
+		HaloSourceSize = "0.05 0.05 0.05"		
+	/>
+</BILLBOARD>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Renumbra">
+      <UniqueIdentifier>{db192bd7-7498-422a-b112-b2f58b7fd13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renumbra\Include">
+      <UniqueIdentifier>{5933d56b-f609-4e30-bf82-5fdfd3ed8982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renumbra\Source">
+      <UniqueIdentifier>{9706429e-f457-4ec4-85c4-5de9e2b75bc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Renumbra\AttackHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\ButtonHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\CharacterMove.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Credits.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\DeathMenu.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\DemoEndText.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\EffectHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\FadeHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameDamageArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameEnemy.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameEnemy_Dog.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameEnemy_Spider.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameEnemy_Worm.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameEntity.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameForceArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameItem.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameItemType.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameLadder.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameLamp.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameLink.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameLiquidArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameMessageHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameMusicHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameObject.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameSaveArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameScripts.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameStickArea.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameSwingDoor.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GameTypes.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\GraphicsHelper.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\HapticGameCamera.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\HudModel_Throw.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\HudModel_Weapon.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Init.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\IntroStory.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Inventory.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Main.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\MainMenu.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\MapHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\MapLoadText.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Notebook.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\NumericalPanel.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Player.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerHands.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerHelper.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_Interact.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_InteractHaptX.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_Misc.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_MiscHaptX.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_Weapon.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PlayerState_WeaponHaptX.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\PreMenu.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\RadioHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\SaveHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\SaveTypes.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\StdAfx.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\TriggerHandler.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Renumbra\Triggers.cpp">
+      <Filter>Renumbra\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renumbra\AttackHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\ButtonHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\CharacterMove.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Credits.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\DeathMenu.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\DemoEndText.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\EffectHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\FadeHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameDamageArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameEnemy.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameEnemy_Dog.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameEnemy_Spider.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameEnemy_Worm.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameEntity.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameForceArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameItem.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameItemType.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameLadder.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameLamp.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameLink.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameLiquidArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameMessageHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameMusicHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameObject.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameSaveArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameScripts.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameStickArea.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameSwingDoor.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GameTypes.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GlobalInit.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\GraphicsHelper.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\HapticGameCamera.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\HudModel_Throw.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\HudModel_Weapon.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Init.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\IntroStory.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Inventory.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\MainMenu.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\MapHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\MapLoadText.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Notebook.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\NumericalPanel.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Player.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerHands.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerHelper.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerMoveStates.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_Interact.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_InteractHaptX.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_Misc.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_MiscHaptX.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_Weapon.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PlayerState_WeaponHaptX.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\PreMenu.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\RadioHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\resource.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\SaveHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\SaveTypes.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\StdAfx.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\TriggerHandler.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Triggers.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Renumbra\Version.h">
+      <Filter>Renumbra\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

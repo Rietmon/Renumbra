@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="OALWrapper">
+      <UniqueIdentifier>{85118f9e-cf40-45d7-9d77-7f6a40c06c7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OALWrapper\Include">
+      <UniqueIdentifier>{a129a1f0-bca7-4216-a2dc-ba694f723627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OALWrapper\Source">
+      <UniqueIdentifier>{d8c4bc1d-833e-42d2-ae6c-ba1ce33126a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OALWrapper\Source\OAL_EFX.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_EFXManager.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Filter.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Helper.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Init.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Loaders.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_LoggerObject.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_OggSample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_OggStream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Playback.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Sample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Source.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_SourceManager.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Stream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Types.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_WAVSample.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_AudioData.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Buffer.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_CustomStream.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Device.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Effect.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_Effect_Reverb.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OALWrapper\Source\OAL_EffectSlot.cpp">
+      <Filter>OALWrapper\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OALWrapper\Include\OAL_AudioData.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Buffer.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_CustomStream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Device.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Effect.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Effect_Reverb.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EffectSlot.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EFX.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_EFXManager.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Filter.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Funcs.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Helper.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Init.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Loaders.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_LoggerObject.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_LowLevelObject.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_OggSample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_OggStream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Playback.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Sample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Source.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_SourceManager.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Stream.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_Types.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="OALWrapper\Include\OAL_WAVSample.h">
+      <Filter>OALWrapper\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

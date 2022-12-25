@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8f8e7f64-cafa-48ee-ba27-ea6049f04955}</ProjectGuid>
+    <RootNamespace>Renumbra</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>R_Game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\Binaries\Win32\Release;C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fltk.lib;wsock32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Renumbra\AttackHandler.cpp" />
+    <ClCompile Include="Renumbra\ButtonHandler.cpp" />
+    <ClCompile Include="Renumbra\CharacterMove.cpp" />
+    <ClCompile Include="Renumbra\Credits.cpp" />
+    <ClCompile Include="Renumbra\DeathMenu.cpp" />
+    <ClCompile Include="Renumbra\DemoEndText.cpp" />
+    <ClCompile Include="Renumbra\EffectHandler.cpp" />
+    <ClCompile Include="Renumbra\FadeHandler.cpp" />
+    <ClCompile Include="Renumbra\GameArea.cpp" />
+    <ClCompile Include="Renumbra\GameDamageArea.cpp" />
+    <ClCompile Include="Renumbra\GameEnemy.cpp" />
+    <ClCompile Include="Renumbra\GameEnemy_Dog.cpp" />
+    <ClCompile Include="Renumbra\GameEnemy_Spider.cpp" />
+    <ClCompile Include="Renumbra\GameEnemy_Worm.cpp" />
+    <ClCompile Include="Renumbra\GameEntity.cpp" />
+    <ClCompile Include="Renumbra\GameForceArea.cpp" />
+    <ClCompile Include="Renumbra\GameItem.cpp" />
+    <ClCompile Include="Renumbra\GameItemType.cpp" />
+    <ClCompile Include="Renumbra\GameLadder.cpp" />
+    <ClCompile Include="Renumbra\GameLamp.cpp" />
+    <ClCompile Include="Renumbra\GameLink.cpp" />
+    <ClCompile Include="Renumbra\GameLiquidArea.cpp" />
+    <ClCompile Include="Renumbra\GameMessageHandler.cpp" />
+    <ClCompile Include="Renumbra\GameMusicHandler.cpp" />
+    <ClCompile Include="Renumbra\GameObject.cpp" />
+    <ClCompile Include="Renumbra\GameSaveArea.cpp" />
+    <ClCompile Include="Renumbra\GameScripts.cpp" />
+    <ClCompile Include="Renumbra\GameStickArea.cpp" />
+    <ClCompile Include="Renumbra\GameSwingDoor.cpp" />
+    <ClCompile Include="Renumbra\GameTypes.cpp" />
+    <ClCompile Include="Renumbra\GraphicsHelper.cpp" />
+    <ClCompile Include="Renumbra\HapticGameCamera.cpp" />
+    <ClCompile Include="Renumbra\HudModel_Throw.cpp" />
+    <ClCompile Include="Renumbra\HudModel_Weapon.cpp" />
+    <ClCompile Include="Renumbra\Init.cpp" />
+    <ClCompile Include="Renumbra\IntroStory.cpp" />
+    <ClCompile Include="Renumbra\Inventory.cpp" />
+    <ClCompile Include="Renumbra\Main.cpp" />
+    <ClCompile Include="Renumbra\MainMenu.cpp" />
+    <ClCompile Include="Renumbra\MapHandler.cpp" />
+    <ClCompile Include="Renumbra\MapLoadText.cpp" />
+    <ClCompile Include="Renumbra\Notebook.cpp" />
+    <ClCompile Include="Renumbra\NumericalPanel.cpp" />
+    <ClCompile Include="Renumbra\Player.cpp" />
+    <ClCompile Include="Renumbra\PlayerHands.cpp" />
+    <ClCompile Include="Renumbra\PlayerHelper.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_Interact.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_InteractHaptX.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_Misc.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_MiscHaptX.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_Weapon.cpp" />
+    <ClCompile Include="Renumbra\PlayerState_WeaponHaptX.cpp" />
+    <ClCompile Include="Renumbra\PreMenu.cpp" />
+    <ClCompile Include="Renumbra\RadioHandler.cpp" />
+    <ClCompile Include="Renumbra\SaveHandler.cpp" />
+    <ClCompile Include="Renumbra\SaveTypes.cpp" />
+    <ClCompile Include="Renumbra\StdAfx.cpp" />
+    <ClCompile Include="Renumbra\TriggerHandler.cpp" />
+    <ClCompile Include="Renumbra\Triggers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renumbra\AttackHandler.h" />
+    <ClInclude Include="Renumbra\ButtonHandler.h" />
+    <ClInclude Include="Renumbra\CharacterMove.h" />
+    <ClInclude Include="Renumbra\Credits.h" />
+    <ClInclude Include="Renumbra\DeathMenu.h" />
+    <ClInclude Include="Renumbra\DemoEndText.h" />
+    <ClInclude Include="Renumbra\EffectHandler.h" />
+    <ClInclude Include="Renumbra\FadeHandler.h" />
+    <ClInclude Include="Renumbra\GameArea.h" />
+    <ClInclude Include="Renumbra\GameDamageArea.h" />
+    <ClInclude Include="Renumbra\GameEnemy.h" />
+    <ClInclude Include="Renumbra\GameEnemy_Dog.h" />
+    <ClInclude Include="Renumbra\GameEnemy_Spider.h" />
+    <ClInclude Include="Renumbra\GameEnemy_Worm.h" />
+    <ClInclude Include="Renumbra\GameEntity.h" />
+    <ClInclude Include="Renumbra\GameForceArea.h" />
+    <ClInclude Include="Renumbra\GameItem.h" />
+    <ClInclude Include="Renumbra\GameItemType.h" />
+    <ClInclude Include="Renumbra\GameLadder.h" />
+    <ClInclude Include="Renumbra\GameLamp.h" />
+    <ClInclude Include="Renumbra\GameLink.h" />
+    <ClInclude Include="Renumbra\GameLiquidArea.h" />
+    <ClInclude Include="Renumbra\GameMessageHandler.h" />
+    <ClInclude Include="Renumbra\GameMusicHandler.h" />
+    <ClInclude Include="Renumbra\GameObject.h" />
+    <ClInclude Include="Renumbra\GameSaveArea.h" />
+    <ClInclude Include="Renumbra\GameScripts.h" />
+    <ClInclude Include="Renumbra\GameStickArea.h" />
+    <ClInclude Include="Renumbra\GameSwingDoor.h" />
+    <ClInclude Include="Renumbra\GameTypes.h" />
+    <ClInclude Include="Renumbra\GlobalInit.h" />
+    <ClInclude Include="Renumbra\GraphicsHelper.h" />
+    <ClInclude Include="Renumbra\HapticGameCamera.h" />
+    <ClInclude Include="Renumbra\HudModel_Throw.h" />
+    <ClInclude Include="Renumbra\HudModel_Weapon.h" />
+    <ClInclude Include="Renumbra\Init.h" />
+    <ClInclude Include="Renumbra\IntroStory.h" />
+    <ClInclude Include="Renumbra\Inventory.h" />
+    <ClInclude Include="Renumbra\MainMenu.h" />
+    <ClInclude Include="Renumbra\MapHandler.h" />
+    <ClInclude Include="Renumbra\MapLoadText.h" />
+    <ClInclude Include="Renumbra\Notebook.h" />
+    <ClInclude Include="Renumbra\NumericalPanel.h" />
+    <ClInclude Include="Renumbra\Player.h" />
+    <ClInclude Include="Renumbra\PlayerHands.h" />
+    <ClInclude Include="Renumbra\PlayerHelper.h" />
+    <ClInclude Include="Renumbra\PlayerMoveStates.h" />
+    <ClInclude Include="Renumbra\PlayerState.h" />
+    <ClInclude Include="Renumbra\PlayerState_Interact.h" />
+    <ClInclude Include="Renumbra\PlayerState_InteractHaptX.h" />
+    <ClInclude Include="Renumbra\PlayerState_Misc.h" />
+    <ClInclude Include="Renumbra\PlayerState_MiscHaptX.h" />
+    <ClInclude Include="Renumbra\PlayerState_Weapon.h" />
+    <ClInclude Include="Renumbra\PlayerState_WeaponHaptX.h" />
+    <ClInclude Include="Renumbra\PreMenu.h" />
+    <ClInclude Include="Renumbra\RadioHandler.h" />
+    <ClInclude Include="Renumbra\resource.h" />
+    <ClInclude Include="Renumbra\SaveHandler.h" />
+    <ClInclude Include="Renumbra\SaveTypes.h" />
+    <ClInclude Include="Renumbra\StdAfx.h" />
+    <ClInclude Include="Renumbra\TriggerHandler.h" />
+    <ClInclude Include="Renumbra\Triggers.h" />
+    <ClInclude Include="Renumbra\Version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

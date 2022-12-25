@@ -1,0 +1,11 @@
+<BILLBOARD>
+	<MAIN
+		Material = "end_door_lightray.mat"
+		Type = "axis"
+		UseOffset = "False"
+		
+		IsHalo = "false"
+		HaloSourceIsParent = "False"
+		HaloSourceSize = "0.05 0.05 0.05"		
+	/>
+</BILLBOARD>

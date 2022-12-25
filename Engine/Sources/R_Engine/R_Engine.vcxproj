@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7B8A06A4-FAE5-4C23-91DC-FF52849BF6EB}</ProjectGuid>
+    <RootNamespace>Renumbra</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectName>R_Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\..\Intermediate\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\R_Engine\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fltk.lib;wsock32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HPL\Source\AI\AI.cpp" />
+    <ClCompile Include="HPL\Source\AI\AINodeContainer.cpp" />
+    <ClCompile Include="HPL\Source\AI\AINodeGenerator.cpp" />
+    <ClCompile Include="HPL\Source\AI\AStar.cpp" />
+    <ClCompile Include="HPL\Source\AI\StateMachine.cpp" />
+    <ClCompile Include="HPL\Source\Game\Game.cpp" />
+    <ClCompile Include="HPL\Source\Game\EngineTypes.cpp" />
+    <ClCompile Include="HPL\Source\Game\SaveGame.cpp" />
+    <ClCompile Include="HPL\Source\Game\ScriptFuncs.cpp" />
+    <ClCompile Include="HPL\Source\Game\Updater.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Animation.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\AnimationTrack.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\BackgroundImage.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Beam.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\BillBoard.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Bone.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\BoneState.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Color.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\FontData.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\GfxObject.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\GPUProgram.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Graphics.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\GraphicsDrawer.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ImageEntityData.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\MaterialHandler.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Additive.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Alpha.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_BaseLight.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Bump.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_BumpColorSpec.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_BumpSpec.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_BumpSpec2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Diffuse.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Diffuse2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_DiffuseAdditive2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_DiffuseAlpha2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_DiffuseSpec.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_EnvMap_Reflect.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Fallback01_BaseLight.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Fallback02_BaseLight.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Flat.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_FontNormal.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Modulative.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_ModulativeX2.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Smoke2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Material_Water.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Mesh.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Mesh2d.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\MeshCreator.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ParticleEmitter.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ParticleEmitter2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ParticleEmitter3D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ParticleEmitter3D_UserData.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\ParticleSystem3D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Renderable.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Renderer2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Renderer3D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\RendererPostEffects.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\RenderList.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\RenderObject2D.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\RenderState.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\Skeleton.cpp" />
+    <ClCompile Include="HPL\Source\Graphics\SubMesh.cpp" />
+    <ClCompile Include="HPL\Source\GUI\Gui.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiGfxElement.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiMaterialBasicTypes.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiPopUp.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiPopUpMessageBox.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiSet.cpp" />
+    <ClCompile Include="HPL\Source\GUI\GuiSkin.cpp" />
+    <ClCompile Include="HPL\Source\GUI\Widget.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetBaseClasses.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetButton.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetCheckBox.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetComboBox.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetFrame.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetImage.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetLabel.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetListBox.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetSlider.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetTextBox.cpp" />
+    <ClCompile Include="HPL\Source\GUI\WidgetWindow.cpp" />
+    <ClCompile Include="HPL\Source\Haptic\Haptic.cpp" />
+    <ClCompile Include="HPL\Source\Haptic\LowLevelHaptic.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\CGProgram.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\CharacterBodyNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\CollideShapeNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\GLee.c" />
+    <ClCompile Include="HPL\Source\Implementation\KeyboardSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelGraphicsSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelInputSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelPhysicsNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelResourcesSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelSoundOpenAL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\LowLevelSystemSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\MeshLoaderCollada.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\MeshLoaderColladaHelpers.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\MeshLoaderColladaLoader.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\MeshLoaderMSH.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\MouseSDL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\OcclusionQueryOGL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\OpenALSoundChannel.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\OpenALSoundData.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\OpenALSoundEnvironment.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PBuffer.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsBodyNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsControllerNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsJointBallNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsJointHingeNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsJointScrewNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsJointSliderNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsMaterialNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\PhysicsWorldNewton.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\scriptstring.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\SDLBitmap2D.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\SDLFontData.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\SDLGameSetup.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\SDLTexture.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\SqScript.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\stdstring.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\TinyXML\tinystr.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\VertexBufferOGL.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\VertexBufferVBO.cpp" />
+    <ClCompile Include="HPL\Source\Implementation\VideoStreamTheora.cpp" />
+    <ClCompile Include="HPL\Source\Input\Action.cpp" />
+    <ClCompile Include="HPL\Source\Input\ActionHaptic.cpp" />
+    <ClCompile Include="HPL\Source\Input\ActionKeyboard.cpp" />
+    <ClCompile Include="HPL\Source\Input\ActionMouseButton.cpp" />
+    <ClCompile Include="HPL\Source\Input\Input.cpp" />
+    <ClCompile Include="HPL\Source\Input\InputDevice.cpp" />
+    <ClCompile Include="HPL\Source\Input\Keyboard.cpp" />
+    <ClCompile Include="HPL\Source\Input\Mouse.cpp" />
+    <ClCompile Include="HPL\Source\Math\BoundingVolume.cpp" />
+    <ClCompile Include="HPL\Source\Math\CRC.cpp" />
+    <ClCompile Include="HPL\Source\Math\Frustum.cpp" />
+    <ClCompile Include="HPL\Source\Math\Math.cpp" />
+    <ClCompile Include="HPL\Source\Math\MathTypes.cpp" />
+    <ClCompile Include="HPL\Source\Math\MeshTypes.cpp" />
+    <ClCompile Include="HPL\Source\Math\Quaternion.cpp" />
+    <ClCompile Include="HPL\Source\Math\Spring.cpp" />
+    <ClCompile Include="HPL\Source\Physics\Body2D.cpp" />
+    <ClCompile Include="HPL\Source\Physics\CharacterBody.cpp" />
+    <ClCompile Include="HPL\Source\Physics\Collider2D.cpp" />
+    <ClCompile Include="HPL\Source\Physics\Physics.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsBody.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsController.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsJoint.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsJointBall.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsJointHinge.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsJointScrew.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsJointSlider.cpp" />
+    <ClCompile Include="HPL\Source\Physics\PhysicsWorld.cpp" />
+    <ClCompile Include="HPL\Source\Physics\SurfaceData.cpp" />
+    <ClCompile Include="HPL\Source\Resources\AnimationManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ConfigFile.cpp" />
+    <ClCompile Include="HPL\Source\Resources\EntityLoader_Object.cpp" />
+    <ClCompile Include="HPL\Source\Resources\FileSearcher.cpp" />
+    <ClCompile Include="HPL\Source\Resources\FontManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\FrameBitmap.cpp" />
+    <ClCompile Include="HPL\Source\Resources\FrameTexture.cpp" />
+    <ClCompile Include="HPL\Source\Resources\GpuProgramManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ImageEntityManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ImageManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\LanguageFile.cpp" />
+    <ClCompile Include="HPL\Source\Resources\MaterialManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\MeshLoaderHandler.cpp" />
+    <ClCompile Include="HPL\Source\Resources\MeshManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ParticleManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ResourceBase.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ResourceImage.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ResourceManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\Resources.cpp" />
+    <ClCompile Include="HPL\Source\Resources\ScriptManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\SoundEntityManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\SoundManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\TextureManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\TileSetManager.cpp" />
+    <ClCompile Include="HPL\Source\Resources\VideoManager.cpp" />
+    <ClCompile Include="HPL\Source\Scene\AnimationState.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Area2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Camera2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Camera3D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\ColliderEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Entity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Entity2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Entity3D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\GridMap2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\ImageEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light2DPoint.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light3D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light3DPoint.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Light3DSpot.cpp" />
+    <ClCompile Include="HPL\Source\Scene\MeshEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\MultiImageEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Node.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Node2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Node3D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\NodeState.cpp" />
+    <ClCompile Include="HPL\Source\Scene\PortalContainer.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Scene.cpp" />
+    <ClCompile Include="HPL\Source\Scene\SectorVisibility.cpp" />
+    <ClCompile Include="HPL\Source\Scene\SoundEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\SoundSource.cpp" />
+    <ClCompile Include="HPL\Source\Scene\SubMeshEntity.cpp" />
+    <ClCompile Include="HPL\Source\Scene\Tile.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileData.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileLayer.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileMap.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileMapLineIt.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileMapRectIt.cpp" />
+    <ClCompile Include="HPL\Source\Scene\TileSet.cpp" />
+    <ClCompile Include="HPL\Source\Scene\World2D.cpp" />
+    <ClCompile Include="HPL\Source\Scene\World3D.cpp" />
+    <ClCompile Include="HPL\Source\Sound\LowLevelSound.cpp" />
+    <ClCompile Include="HPL\Source\Sound\MusicHandler.cpp" />
+    <ClCompile Include="HPL\Source\Sound\Sound.cpp" />
+    <ClCompile Include="HPL\Source\Sound\SoundEntityData.cpp" />
+    <ClCompile Include="HPL\Source\Sound\SoundHandler.cpp" />
+    <ClCompile Include="HPL\Source\System\Container.cpp" />
+    <ClCompile Include="HPL\Source\System\LogicTimer.cpp" />
+    <ClCompile Include="HPL\Source\System\MemoryManager.cpp" />
+    <ClCompile Include="HPL\Source\System\SerializeClass.cpp" />
+    <ClCompile Include="HPL\Source\System\String.cpp" />
+    <ClCompile Include="HPL\Source\System\System.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HPL\Include\AI\AI.h" />
+    <ClInclude Include="HPL\Include\AI\AINodeContainer.h" />
+    <ClInclude Include="HPL\Include\AI\AINodeGenerator.h" />
+    <ClInclude Include="HPL\Include\AI\AStar.h" />
+    <ClInclude Include="HPL\Include\AI\StateMachine.h" />
+    <ClInclude Include="HPL\Include\Game\Game.h" />
+    <ClInclude Include="HPL\Include\Game\EngineTypes.h" />
+    <ClInclude Include="HPL\Include\Game\LowLevelGameSetup.h" />
+    <ClInclude Include="HPL\Include\Game\SaveGame.h" />
+    <ClInclude Include="HPL\Include\Game\ScriptFuncs.h" />
+    <ClInclude Include="HPL\Include\Game\Updateable.h" />
+    <ClInclude Include="HPL\Include\Game\Updater.h" />
+    <ClInclude Include="HPL\Include\GL\GLee.h" />
+    <ClInclude Include="HPL\Include\Graphics\Animation.h" />
+    <ClInclude Include="HPL\Include\Graphics\AnimationTrack.h" />
+    <ClInclude Include="HPL\Include\Graphics\BackgroundImage.h" />
+    <ClInclude Include="HPL\Include\Graphics\Beam.h" />
+    <ClInclude Include="HPL\Include\Graphics\BillBoard.h" />
+    <ClInclude Include="HPL\Include\Graphics\Bitmap2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Bone.h" />
+    <ClInclude Include="HPL\Include\Graphics\BoneState.h" />
+    <ClInclude Include="HPL\Include\Graphics\Color.h" />
+    <ClInclude Include="HPL\Include\Graphics\FontData.h" />
+    <ClInclude Include="HPL\Include\Graphics\GfxObject.h" />
+    <ClInclude Include="HPL\Include\Graphics\GPUProgram.h" />
+    <ClInclude Include="HPL\Include\Graphics\Graphics.h" />
+    <ClInclude Include="HPL\Include\Graphics\GraphicsDrawer.h" />
+    <ClInclude Include="HPL\Include\Graphics\GraphicsTypes.h" />
+    <ClInclude Include="HPL\Include\Graphics\ImageEntityData.h" />
+    <ClInclude Include="HPL\Include\Graphics\LowLevelGraphics.h" />
+    <ClInclude Include="HPL\Include\Graphics\LowLevelPicture.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material.h" />
+    <ClInclude Include="HPL\Include\Graphics\MaterialHandler.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Additive.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Alpha.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_BaseLight.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Bump.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_BumpColorSpec.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_BumpSpec.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_BumpSpec2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Diffuse.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Diffuse2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_DiffuseAdditive2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_DiffuseAlpha2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_DiffuseSpec.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_EnvMap_Reflect.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Fallback01_BaseLight.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Fallback02_BaseLight.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Flat.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_FontNormal.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Modulative.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_ModulativeX2.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Smoke2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Material_Water.h" />
+    <ClInclude Include="HPL\Include\Graphics\Mesh.h" />
+    <ClInclude Include="HPL\Include\Graphics\Mesh2d.h" />
+    <ClInclude Include="HPL\Include\Graphics\MeshCreator.h" />
+    <ClInclude Include="HPL\Include\Graphics\OcclusionQuery.h" />
+    <ClInclude Include="HPL\Include\Graphics\ParticleEmitter.h" />
+    <ClInclude Include="HPL\Include\Graphics\ParticleEmitter2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\ParticleEmitter3D.h" />
+    <ClInclude Include="HPL\Include\Graphics\ParticleEmitter3D_UserData.h" />
+    <ClInclude Include="HPL\Include\Graphics\ParticleSystem3D.h" />
+    <ClInclude Include="HPL\Include\Graphics\PixelFormat.h" />
+    <ClInclude Include="HPL\Include\Graphics\Renderable.h" />
+    <ClInclude Include="HPL\Include\Graphics\Renderer2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\Renderer3D.h" />
+    <ClInclude Include="HPL\Include\Graphics\RendererPostEffects.h" />
+    <ClInclude Include="HPL\Include\Graphics\RenderList.h" />
+    <ClInclude Include="HPL\Include\Graphics\RenderObject2D.h" />
+    <ClInclude Include="HPL\Include\Graphics\RenderState.h" />
+    <ClInclude Include="HPL\Include\Graphics\Skeleton.h" />
+    <ClInclude Include="HPL\Include\Graphics\SubMesh.h" />
+    <ClInclude Include="HPL\Include\Graphics\Texture.h" />
+    <ClInclude Include="HPL\Include\Graphics\VertexBuffer.h" />
+    <ClInclude Include="HPL\Include\Graphics\VideoStream.h" />
+    <ClInclude Include="HPL\Include\GUI\Gui.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiGfxElement.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiMaterial.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiMaterialBasicTypes.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiPopUp.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiPopUpMessageBox.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiSet.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiSkin.h" />
+    <ClInclude Include="HPL\Include\GUI\GuiTypes.h" />
+    <ClInclude Include="HPL\Include\GUI\Widget.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetBaseClasses.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetButton.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetCheckBox.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetComboBox.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetFrame.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetImage.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetLabel.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetListBox.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetSlider.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetTextBox.h" />
+    <ClInclude Include="HPL\Include\GUI\WidgetWindow.h" />
+    <ClInclude Include="HPL\Include\Haptic\Haptic.h" />
+    <ClInclude Include="HPL\Include\Haptic\HapticForce.h" />
+    <ClInclude Include="HPL\Include\Haptic\HapticShape.h" />
+    <ClInclude Include="HPL\Include\Haptic\HapticSurface.h" />
+    <ClInclude Include="HPL\Include\Haptic\HapticTypes.h" />
+    <ClInclude Include="HPL\Include\Haptic\LowLevelHaptic.h" />
+    <ClInclude Include="HPL\Include\HPL.h" />
+    <ClInclude Include="HPL\Include\Implementation\CGProgram.h" />
+    <ClInclude Include="HPL\Include\Implementation\CharacterBodyNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\CollideShapeNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\KeyboardSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelGraphicsSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelInputSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelPhysicsNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelResourcesSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelSoundOpenAL.h" />
+    <ClInclude Include="HPL\Include\Implementation\LowLevelSystemSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\MeshLoaderCollada.h" />
+    <ClInclude Include="HPL\Include\Implementation\MeshLoaderMSH.h" />
+    <ClInclude Include="HPL\Include\Implementation\MouseSDL.h" />
+    <ClInclude Include="HPL\Include\Implementation\OcclusionQueryOGL.h" />
+    <ClInclude Include="HPL\Include\Implementation\OpenALSoundChannel.h" />
+    <ClInclude Include="HPL\Include\Implementation\OpenALSoundData.h" />
+    <ClInclude Include="HPL\Include\Implementation\OpenALSoundEnvironment.h" />
+    <ClInclude Include="HPL\Include\Implementation\PBuffer.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsBodyNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsControllerNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsJointBallNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsJointHingeNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsJointNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsJointScrewNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsJointSliderNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsMaterialNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\PhysicsWorldNewton.h" />
+    <ClInclude Include="HPL\Include\Implementation\Platform.h" />
+    <ClInclude Include="HPL\Include\Implementation\scriptstring.h" />
+    <ClInclude Include="HPL\Include\Implementation\SDLBitmap2D.h" />
+    <ClInclude Include="HPL\Include\Implementation\SDLFontData.h" />
+    <ClInclude Include="HPL\Include\Implementation\SDLGameSetup.h" />
+    <ClInclude Include="HPL\Include\Implementation\SDLPixelFormat.h" />
+    <ClInclude Include="HPL\Include\Implementation\SDLTexture.h" />
+    <ClInclude Include="HPL\Include\Implementation\SqScript.h" />
+    <ClInclude Include="HPL\Include\Implementation\stdstring.h" />
+    <ClInclude Include="HPL\Include\Implementation\tinyXML\tinystr.h" />
+    <ClInclude Include="HPL\Include\Implementation\tinyXML\tinyxml.h" />
+    <ClInclude Include="HPL\Include\Implementation\VertexBufferOGL.h" />
+    <ClInclude Include="HPL\Include\Implementation\VertexBufferVBO.h" />
+    <ClInclude Include="HPL\Include\Implementation\VideoStreamTheora.h" />
+    <ClInclude Include="HPL\Include\Input\Action.h" />
+    <ClInclude Include="HPL\Include\Input\ActionHaptic.h" />
+    <ClInclude Include="HPL\Include\Input\ActionKeyboard.h" />
+    <ClInclude Include="HPL\Include\Input\ActionMouseButton.h" />
+    <ClInclude Include="HPL\Include\Input\Input.h" />
+    <ClInclude Include="HPL\Include\Input\InputDevice.h" />
+    <ClInclude Include="HPL\Include\Input\InputTypes.h" />
+    <ClInclude Include="HPL\Include\Input\Keyboard.h" />
+    <ClInclude Include="HPL\Include\Input\LowLevelInput.h" />
+    <ClInclude Include="HPL\Include\Input\Mouse.h" />
+    <ClInclude Include="HPL\Include\Math\BoundingVolume.h" />
+    <ClInclude Include="HPL\Include\Math\CRC.h" />
+    <ClInclude Include="HPL\Include\Math\Frustum.h" />
+    <ClInclude Include="HPL\Include\Math\Math.h" />
+    <ClInclude Include="HPL\Include\Math\MathTypes.h" />
+    <ClInclude Include="HPL\Include\Math\Matrix.h" />
+    <ClInclude Include="HPL\Include\Math\MeshTypes.h" />
+    <ClInclude Include="HPL\Include\Math\PidController.h" />
+    <ClInclude Include="HPL\Include\Math\Quaternion.h" />
+    <ClInclude Include="HPL\Include\Math\Spring.h" />
+    <ClInclude Include="HPL\Include\Math\Vector2.h" />
+    <ClInclude Include="HPL\Include\Math\Vector3.h" />
+    <ClInclude Include="HPL\Include\Physics\Body2D.h" />
+    <ClInclude Include="HPL\Include\Physics\CharacterBody.h" />
+    <ClInclude Include="HPL\Include\Physics\CollideData.h" />
+    <ClInclude Include="HPL\Include\Physics\CollideData2D.h" />
+    <ClInclude Include="HPL\Include\Physics\Collider2D.h" />
+    <ClInclude Include="HPL\Include\Physics\CollideShape.h" />
+    <ClInclude Include="HPL\Include\Physics\LowLevelPhysics.h" />
+    <ClInclude Include="HPL\Include\Physics\Physics.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsBody.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsController.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsJoint.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsJointBall.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsJointHinge.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsJointScrew.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsJointSlider.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsMaterial.h" />
+    <ClInclude Include="HPL\Include\Physics\PhysicsWorld.h" />
+    <ClInclude Include="HPL\Include\Physics\SurfaceData.h" />
+    <ClInclude Include="HPL\Include\Resources\AnimationManager.h" />
+    <ClInclude Include="HPL\Include\Resources\ConfigFile.h" />
+    <ClInclude Include="HPL\Include\Resources\EntityLoader_Object.h" />
+    <ClInclude Include="HPL\Include\Resources\FileSearcher.h" />
+    <ClInclude Include="HPL\Include\Resources\FontManager.h" />
+    <ClInclude Include="HPL\Include\Resources\FrameBase.h" />
+    <ClInclude Include="HPL\Include\Resources\FrameBitmap.h" />
+    <ClInclude Include="HPL\Include\Resources\FrameTexture.h" />
+    <ClInclude Include="HPL\Include\Resources\GpuProgramManager.h" />
+    <ClInclude Include="HPL\Include\Resources\ImageEntityManager.h" />
+    <ClInclude Include="HPL\Include\Resources\ImageManager.h" />
+    <ClInclude Include="HPL\Include\Resources\LanguageFile.h" />
+    <ClInclude Include="HPL\Include\Resources\LowLevelResources.h" />
+    <ClInclude Include="HPL\Include\Resources\MaterialManager.h" />
+    <ClInclude Include="HPL\Include\Resources\MeshLoader.h" />
+    <ClInclude Include="HPL\Include\Resources\MeshLoaderHandler.h" />
+    <ClInclude Include="HPL\Include\Resources\MeshManager.h" />
+    <ClInclude Include="HPL\Include\Resources\ParticleManager.h" />
+    <ClInclude Include="HPL\Include\Resources\ResourceBase.h" />
+    <ClInclude Include="HPL\Include\Resources\ResourceImage.h" />
+    <ClInclude Include="HPL\Include\Resources\ResourceManager.h" />
+    <ClInclude Include="HPL\Include\Resources\Resources.h" />
+    <ClInclude Include="HPL\Include\Resources\ResourcesTypes.h" />
+    <ClInclude Include="HPL\Include\Resources\ScriptManager.h" />
+    <ClInclude Include="HPL\Include\Resources\SoundEntityManager.h" />
+    <ClInclude Include="HPL\Include\Resources\SoundManager.h" />
+    <ClInclude Include="HPL\Include\Resources\TextureManager.h" />
+    <ClInclude Include="HPL\Include\Resources\TileSetManager.h" />
+    <ClInclude Include="HPL\Include\Resources\VideoManager.h" />
+    <ClInclude Include="HPL\Include\Scene\AnimationState.h" />
+    <ClInclude Include="HPL\Include\Scene\Area2D.h" />
+    <ClInclude Include="HPL\Include\Scene\Camera.h" />
+    <ClInclude Include="HPL\Include\Scene\Camera2D.h" />
+    <ClInclude Include="HPL\Include\Scene\Camera3D.h" />
+    <ClInclude Include="HPL\Include\Scene\ColliderEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\Entity.h" />
+    <ClInclude Include="HPL\Include\Scene\Entity2D.h" />
+    <ClInclude Include="HPL\Include\Scene\Entity3D.h" />
+    <ClInclude Include="HPL\Include\Scene\GridMap2D.h" />
+    <ClInclude Include="HPL\Include\Scene\ImageEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\Light.h" />
+    <ClInclude Include="HPL\Include\Scene\Light2D.h" />
+    <ClInclude Include="HPL\Include\Scene\Light2DPoint.h" />
+    <ClInclude Include="HPL\Include\Scene\Light3D.h" />
+    <ClInclude Include="HPL\Include\Scene\Light3DPoint.h" />
+    <ClInclude Include="HPL\Include\Scene\Light3DSpot.h" />
+    <ClInclude Include="HPL\Include\Scene\MeshEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\MultiImageEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\Node.h" />
+    <ClInclude Include="HPL\Include\Scene\Node2D.h" />
+    <ClInclude Include="HPL\Include\Scene\Node3D.h" />
+    <ClInclude Include="HPL\Include\Scene\NodeState.h" />
+    <ClInclude Include="HPL\Include\Scene\PortalContainer.h" />
+    <ClInclude Include="HPL\Include\Scene\RenderableContainer.h" />
+    <ClInclude Include="HPL\Include\Scene\Scene.h" />
+    <ClInclude Include="HPL\Include\Scene\SectorVisibility.h" />
+    <ClInclude Include="HPL\Include\Scene\SoundEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\SoundSource.h" />
+    <ClInclude Include="HPL\Include\Scene\SubMeshEntity.h" />
+    <ClInclude Include="HPL\Include\Scene\Tile.h" />
+    <ClInclude Include="HPL\Include\Scene\TileData.h" />
+    <ClInclude Include="HPL\Include\Scene\TileLayer.h" />
+    <ClInclude Include="HPL\Include\Scene\TileMap.h" />
+    <ClInclude Include="HPL\Include\Scene\TileMapIt.h" />
+    <ClInclude Include="HPL\Include\Scene\TileMapLineIt.h" />
+    <ClInclude Include="HPL\Include\Scene\TileMapRectIt.h" />
+    <ClInclude Include="HPL\Include\Scene\TileSet.h" />
+    <ClInclude Include="HPL\Include\Scene\World2D.h" />
+    <ClInclude Include="HPL\Include\Scene\World3D.h" />
+    <ClInclude Include="HPL\Include\Sound\LowLevelSound.h" />
+    <ClInclude Include="HPL\Include\Sound\MusicHandler.h" />
+    <ClInclude Include="HPL\Include\Sound\Sound.h" />
+    <ClInclude Include="HPL\Include\Sound\SoundChannel.h" />
+    <ClInclude Include="HPL\Include\Sound\SoundData.h" />
+    <ClInclude Include="HPL\Include\Sound\SoundEntityData.h" />
+    <ClInclude Include="HPL\Include\Sound\SoundEnvironment.h" />
+    <ClInclude Include="HPL\Include\Sound\SoundHandler.h" />
+    <ClInclude Include="HPL\Include\System\BinTree.h" />
+    <ClInclude Include="HPL\Include\System\Container.h" />
+    <ClInclude Include="HPL\Include\System\LogicTimer.h" />
+    <ClInclude Include="HPL\Include\System\LowLevelSystem.h" />
+    <ClInclude Include="HPL\Include\System\MemoryManager.h" />
+    <ClInclude Include="HPL\Include\System\Script.h" />
+    <ClInclude Include="HPL\Include\System\SerializeClass.h" />
+    <ClInclude Include="HPL\Include\System\String.h" />
+    <ClInclude Include="HPL\Include\System\System.h" />
+    <ClInclude Include="HPL\Include\System\SystemTypes.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
