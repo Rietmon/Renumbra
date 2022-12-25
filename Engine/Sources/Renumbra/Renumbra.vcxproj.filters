@@ -117,7 +117,7 @@
     <ClCompile Include="HPL\Source\Game\Game.cpp">
       <Filter>HPL\Source\Game</Filter>
     </ClCompile>
-    <ClCompile Include="HPL\Source\Game\GameTypes.cpp">
+    <ClCompile Include="HPL\Source\Game\EngineTypes.cpp">
       <Filter>HPL\Source\Game</Filter>
     </ClCompile>
     <ClCompile Include="HPL\Source\Game\SaveGame.cpp">
@@ -1088,7 +1088,7 @@
     <ClInclude Include="HPL\Include\Game\Game.h">
       <Filter>HPL\Include\Game</Filter>
     </ClInclude>
-    <ClInclude Include="HPL\Include\Game\GameTypes.h">
+    <ClInclude Include="HPL\Include\Game\EngineTypes.h">
       <Filter>HPL\Include\Game</Filter>
     </ClInclude>
     <ClInclude Include="HPL\Include\GL\GLee.h">

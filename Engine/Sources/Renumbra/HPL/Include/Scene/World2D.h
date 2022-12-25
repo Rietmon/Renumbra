@@ -24,7 +24,7 @@
 #include "system/SystemTypes.h"
 #include "graphics/GraphicsTypes.h"
 #include "math/MathTypes.h"
-#include "game/GameTypes.h"
+#include "game/EngineTypes.h"
 
 #include "scene/SoundSource.h"
 

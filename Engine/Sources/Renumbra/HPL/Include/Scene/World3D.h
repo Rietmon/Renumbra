@@ -26,7 +26,7 @@
 #include "scene/SoundSource.h"
 #include "scene/Entity3D.h"
 
-#include "game/GameTypes.h"
+#include "game/EngineTypes.h"
 
 #include "game/SaveGame.h"
 

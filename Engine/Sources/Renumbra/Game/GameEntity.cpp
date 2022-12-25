@@ -16,7 +16,6 @@
  * You should have received a copy of the GNU General Public License
  * along with Penumbra Overture.  If not, see <http://www.gnu.org/licenses/>.
  */
-#include "GameEntity.h"
 
 #include "Init.h"
 #include "Player.h"
@@ -26,6 +25,7 @@
 #include "GameMessageHandler.h"
 #include "EffectHandler.h"
 #include "GameStickArea.h"
+#include "GameEntity.h"
 
 //-----------------------------------------------------------------------
 
