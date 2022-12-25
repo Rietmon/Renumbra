@@ -5,14 +5,14 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_EFX.h"
-#include "OALWrapper/OAL_Types.h"
-#include "OALWrapper/OAL_Device.h"
-#include "OALWrapper/OAL_Source.h"
-#include "OALWrapper/OAL_SourceManager.h"
-#include "OALWrapper/OAL_Effect_Reverb.h"
-#include "OALWrapper/OAL_Filter.h"
-#include "OALWrapper/OAL_EFXManager.h"
+#include "OAL_EFX.h"
+#include "OAL_Types.h"
+#include "OAL_Device.h"
+#include "OAL_Source.h"
+#include "OAL_SourceManager.h"
+#include "OAL_Effect_Reverb.h"
+#include "OAL_Filter.h"
+#include "OAL_EFXManager.h"
 
 extern cOAL_Device* gpDevice;
 

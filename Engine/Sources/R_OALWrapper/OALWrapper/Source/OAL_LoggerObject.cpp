@@ -6,8 +6,8 @@
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
 
-#include "OALWrapper/OAL_LoggerObject.h"
-#include "OALWrapper/OAL_Helper.h"
+#include "OAL_LoggerObject.h"
+#include "OAL_Helper.h"
 
 #include <cstdlib>
 #include <cstdio>

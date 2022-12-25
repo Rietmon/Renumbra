@@ -12,10 +12,10 @@
 	@version 0.1
 	Set of functions to manage playback and such in OpenAL
 */
-#include "OALWrapper/OAL_Types.h"
-#include "OALWrapper/OAL_Playback.h"
-#include "OALWrapper/OAL_Source.h"
-#include "OALWrapper/OAL_Device.h"
+#include "OAL_Types.h"
+#include "OAL_Playback.h"
+#include "OAL_Source.h"
+#include "OAL_Device.h"
 
 extern cOAL_Device* gpDevice;
 

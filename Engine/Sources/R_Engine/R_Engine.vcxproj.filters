@@ -73,9 +73,6 @@
     <Filter Include="HPL\Source\Implementation">
       <UniqueIdentifier>{dcee42c3-ab3b-401d-8711-dd0a3d1eb69b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="HPL\Source\Implementation\Platform">
-      <UniqueIdentifier>{86d78b86-f9f1-4166-ba7b-3acae37fcb58}</UniqueIdentifier>
-    </Filter>
     <Filter Include="HPL\Source\Implementation\TinyXML">
       <UniqueIdentifier>{7053c754-8cbc-4066-a74e-a13eabb0bee2}</UniqueIdentifier>
     </Filter>
@@ -103,9 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HPL\Source\Game\Game.cpp">
-      <Filter>HPL\Source\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\Source\Game\EngineTypes.cpp">
       <Filter>HPL\Source\Game</Filter>
     </ClCompile>
     <ClCompile Include="HPL\Source\Game\SaveGame.cpp">
@@ -341,9 +335,6 @@
     </ClCompile>
     <ClCompile Include="HPL\Source\Haptic\Haptic.cpp">
       <Filter>HPL\Source\Haptic</Filter>
-    </ClCompile>
-    <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp">
-      <Filter>HPL\Source\Implementation\Platform</Filter>
     </ClCompile>
     <ClCompile Include="HPL\Source\Implementation\TinyXML\tinyxml.cpp">
       <Filter>HPL\Source\Implementation\TinyXML</Filter>
@@ -828,9 +819,6 @@
       <Filter>HPL\Include\Game</Filter>
     </ClInclude>
     <ClInclude Include="HPL\Include\Game\Game.h">
-      <Filter>HPL\Include\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="HPL\Include\Game\EngineTypes.h">
       <Filter>HPL\Include\Game</Filter>
     </ClInclude>
     <ClInclude Include="HPL\Include\GL\GLee.h">

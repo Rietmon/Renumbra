@@ -20,7 +20,7 @@
 #define HPL_SCRIPT_H
 
 #include "resources/ResourceBase.h"
-#include "angelscript.h"
+#include <angelscript.h>
 
 #ifdef __GNUC__
 	#ifdef __ppc__

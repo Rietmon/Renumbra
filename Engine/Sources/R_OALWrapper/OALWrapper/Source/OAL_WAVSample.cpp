@@ -13,10 +13,10 @@
 	Derived class for containing WAV Sample data 
 */
 
-#include "OALWrapper/OAL_WAVSample.h"
-#include "OALWrapper/OAL_Buffer.h"
-#include "OALWrapper/OAL_Helper.h"
-#include "OALWrapper/OAL_Device.h"
+#include "OAL_WAVSample.h"
+#include "OAL_Buffer.h"
+#include "OAL_Helper.h"
+#include "OAL_Device.h"
 
 // Pull in for OAL Types
 #include <ogg/ogg.h>

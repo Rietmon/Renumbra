@@ -14,8 +14,8 @@
 */
 
 
-#include "OALWrapper/OAL_CustomStream.h"
-#include "OALWrapper/OAL_Buffer.h"
+#include "OAL_CustomStream.h"
+#include "OAL_Buffer.h"
 #include <cstdio>
 #include <cstdlib>
 

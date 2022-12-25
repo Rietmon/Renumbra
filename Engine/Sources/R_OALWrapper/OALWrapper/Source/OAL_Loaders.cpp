@@ -13,10 +13,10 @@
 	Implementation of Loading/Unloading functions
 */
 
-#include "OALWrapper/OAL_Loaders.h"
-#include "OALWrapper/OAL_Device.h"
-#include "OALWrapper/OAL_Sample.h"
-#include "OALWrapper/OAL_Stream.h"
+#include "OAL_Loaders.h"
+#include "OAL_Device.h"
+#include "OAL_Sample.h"
+#include "OAL_Stream.h"
 
 using namespace std;
 

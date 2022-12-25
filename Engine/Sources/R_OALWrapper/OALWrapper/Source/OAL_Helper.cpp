@@ -13,8 +13,8 @@
     Set of Helper functions
 */
 
-#include "OALWrapper/OAL_Helper.h"
-#include "OALWrapper/OAL_Device.h"
+#include "OAL_Helper.h"
+#include "OAL_Device.h"
 
 #include <cstdlib>
 #include <cstdio>

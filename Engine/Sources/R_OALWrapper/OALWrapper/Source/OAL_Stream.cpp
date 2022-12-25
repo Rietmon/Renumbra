@@ -5,12 +5,12 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_Types.h"
-#include "OALWrapper/OAL_Device.h"
-#include "OALWrapper/OAL_Helper.h"
-#include "OALWrapper/OAL_Stream.h"
-#include "OALWrapper/OAL_Source.h"
-#include "OALWrapper/OAL_Buffer.h"
+#include "OAL_Types.h"
+#include "OAL_Device.h"
+#include "OAL_Helper.h"
+#include "OAL_Stream.h"
+#include "OAL_Source.h"
+#include "OAL_Buffer.h"
 
 #include <cstdlib>
 

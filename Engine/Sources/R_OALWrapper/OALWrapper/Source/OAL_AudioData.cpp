@@ -5,9 +5,9 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_AudioData.h"
+#include "OAL_AudioData.h"
 
-#include "OALWrapper/OAL_Buffer.h"
+#include "OAL_Buffer.h"
 
 
 //-------------------------------------------------------------------------------

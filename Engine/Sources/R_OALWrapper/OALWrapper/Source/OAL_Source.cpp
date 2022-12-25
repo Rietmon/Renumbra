@@ -14,18 +14,18 @@
 */
 
 
-#include "OALWrapper/OAL_Source.h"
-#include "OALWrapper/OAL_Buffer.h"
-#include "OALWrapper/OAL_Sample.h"
-#include "OALWrapper/OAL_Stream.h"
-#include "OALWrapper/OAL_EffectSlot.h"
-#include "OALWrapper/OAL_Effect.h"
-#include "OALWrapper/OAL_Filter.h"
-#include "OALWrapper/OAL_Device.h"
-#include "OALWrapper/OAL_Helper.h"
-#include "OALWrapper/OAL_SourceManager.h"
+#include "OAL_Source.h"
+#include "OAL_Buffer.h"
+#include "OAL_Sample.h"
+#include "OAL_Stream.h"
+#include "OAL_EffectSlot.h"
+#include "OAL_Effect.h"
+#include "OAL_Filter.h"
+#include "OAL_Device.h"
+#include "OAL_Helper.h"
+#include "OAL_SourceManager.h"
 
-#include <SDL_mutex.h>
+#include <SDL/SDL_mutex.h>
 
 //--------------------------------------------------------------------------------
 

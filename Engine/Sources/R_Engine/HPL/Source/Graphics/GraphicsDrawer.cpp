@@ -76,8 +76,7 @@ namespace hpl {
 
 	bool cGfxBufferCompare::operator()(const cGfxBufferObject& aObjectA,const cGfxBufferObject& aObjectB)
 	{
-		return false;
-		/*if (aObjectA.GetZ() != aObjectB.GetZ())
+		if(aObjectA.GetZ() != aObjectB.GetZ())
 		{
 			return aObjectA.GetZ() < aObjectB.GetZ();
 		}
@@ -97,7 +96,7 @@ namespace hpl {
 		{
 
 		}
-		return false;*/
+		return false;
 	}
 
 	//-----------------------------------------------------------------------

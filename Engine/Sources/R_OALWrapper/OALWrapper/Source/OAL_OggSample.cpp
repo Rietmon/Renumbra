@@ -13,8 +13,8 @@
 	Derived class for containing Ogg Vorbis Sample data 
 */
 
-#include "OALWrapper/OAL_OggSample.h"
-#include "OALWrapper/OAL_Buffer.h"
+#include "OAL_OggSample.h"
+#include "OAL_Buffer.h"
 #include <cstdlib>
 #include <string>
 #include <cstring>

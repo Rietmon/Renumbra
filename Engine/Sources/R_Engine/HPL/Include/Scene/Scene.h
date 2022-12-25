@@ -22,7 +22,7 @@
 #include <list>
 
 #include "system/SystemTypes.h"
-#include "game/EngineTypes.h"
+#include "game/GameTypes.h"
 
 #include "game/Updateable.h"
 #include "scene/Camera3D.h"
@@ -44,7 +44,6 @@ namespace hpl {
 	class cUpdater;
 	class cWorld3D;
 	class cWorld2D;
-	class cScriptVar;
 
 	typedef std::list<iCamera*> tCameraList;
 	typedef tCameraList::iterator tCameraListIt;

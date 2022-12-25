@@ -5,10 +5,10 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_Effect.h"
-#include "OALWrapper/OAL_Helper.h"
+#include "OAL_Effect.h"
+#include "OAL_Helper.h"
 
-#include <SDL_mutex.h>
+#include <SDL/SDL_mutex.h>
 
 cOAL_Effect::cOAL_Effect() : iOAL_LowLevelObject("Effect"),
 							 mbNeedsUpdate(true), 

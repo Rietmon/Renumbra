@@ -20,6 +20,7 @@
 #define HPL_OPENAL_SOUND_DATA_H
 
 #include "sound/SoundData.h"
+
 #include "OAL_Funcs.h"
 
 namespace hpl {

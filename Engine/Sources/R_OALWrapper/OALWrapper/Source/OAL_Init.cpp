@@ -13,11 +13,11 @@
 	Set of functions for Initialization/Shutdown, plus misc funcs
 */
 
-#include "OALWrapper/OAL_Init.h"
-#include "OALWrapper/OAL_Types.h"
-#include "OALWrapper/OAL_Device.h"
-#include "OALWrapper/OAL_SourceManager.h"
-#include "OALWrapper/OAL_Stream.h"
+#include "OAL_Init.h"
+#include "OAL_Types.h"
+#include "OAL_Device.h"
+#include "OAL_SourceManager.h"
+#include "OAL_Stream.h"
 
 #include <cstdarg>
 #include <cstdlib>

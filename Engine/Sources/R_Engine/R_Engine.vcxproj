@@ -111,7 +111,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\R_Engine\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\R_OALWrapper\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\R_Engine\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -124,7 +124,7 @@
       <AdditionalDependencies>fltk.lib;wsock32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Projects\Renumbra\Engine\Binaries\Win32\Release;C:\Projects\Renumbra\Engine\SDK\Libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -166,7 +166,6 @@
     <ClCompile Include="HPL\Source\AI\AStar.cpp" />
     <ClCompile Include="HPL\Source\AI\StateMachine.cpp" />
     <ClCompile Include="HPL\Source\Game\Game.cpp" />
-    <ClCompile Include="HPL\Source\Game\EngineTypes.cpp" />
     <ClCompile Include="HPL\Source\Game\SaveGame.cpp" />
     <ClCompile Include="HPL\Source\Game\ScriptFuncs.cpp" />
     <ClCompile Include="HPL\Source\Game\Updater.cpp" />
@@ -274,7 +273,6 @@
     <ClCompile Include="HPL\Source\Implementation\PhysicsJointSliderNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsMaterialNewton.cpp" />
     <ClCompile Include="HPL\Source\Implementation\PhysicsWorldNewton.cpp" />
-    <ClCompile Include="HPL\Source\Implementation\Platform\win32.cpp" />
     <ClCompile Include="HPL\Source\Implementation\scriptstring.cpp" />
     <ClCompile Include="HPL\Source\Implementation\SDLBitmap2D.cpp" />
     <ClCompile Include="HPL\Source\Implementation\SDLFontData.cpp" />
@@ -399,7 +397,6 @@
     <ClInclude Include="HPL\Include\AI\AStar.h" />
     <ClInclude Include="HPL\Include\AI\StateMachine.h" />
     <ClInclude Include="HPL\Include\Game\Game.h" />
-    <ClInclude Include="HPL\Include\Game\EngineTypes.h" />
     <ClInclude Include="HPL\Include\Game\LowLevelGameSetup.h" />
     <ClInclude Include="HPL\Include\Game\SaveGame.h" />
     <ClInclude Include="HPL\Include\Game\ScriptFuncs.h" />

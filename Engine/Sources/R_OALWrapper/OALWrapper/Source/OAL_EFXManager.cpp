@@ -5,16 +5,16 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_EFXManager.h"
-#include "OALWrapper/OAL_EffectSlot.h"
-#include "OALWrapper/OAL_Effect.h"
-#include "OALWrapper/OAL_Effect_Reverb.h"
-#include "OALWrapper/OAL_Filter.h"
-#include "OALWrapper/OAL_Device.h"
+#include "OAL_EFXManager.h"
+#include "OAL_EffectSlot.h"
+#include "OAL_Effect.h"
+#include "OAL_Effect_Reverb.h"
+#include "OAL_Filter.h"
+#include "OAL_Device.h"
 
-#include <SDL_thread.h>
-#include <SDL_timer.h>
-#include <SDL_version.h>
+#include <SDL/SDL_thread.h>
+#include <SDL/SDL_timer.h>
+#include <SDL/SDL_version.h>
 
 int SlotUpdaterThread(void* alUnusedArg);
 

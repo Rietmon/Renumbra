@@ -5,13 +5,13 @@
  *
  * For conditions of distribution and use, see copyright notice in LICENSE
  */
-#include "OALWrapper/OAL_SourceManager.h"
-#include "OALWrapper/OAL_Source.h"
-#include "OALWrapper/OAL_Device.h"
+#include "OAL_SourceManager.h"
+#include "OAL_Source.h"
+#include "OAL_Device.h"
 
-#include <SDL_thread.h>
-#include <SDL_timer.h>
-#include <SDL_version.h>
+#include <SDL/SDL_thread.h>
+#include <SDL/SDL_timer.h>
+#include <SDL/SDL_version.h>
 
 //-----------------------------------------------------------------------------------
 
