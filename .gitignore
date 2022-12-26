@@ -31,8 +31,10 @@
 *.out
 *.app
 
+*/.idea/
 */.vs/
 Engine/Sources/.vs/
+Engine/Sources/.idea/
 */Binaries/
 */Intermediate/
 /Game/

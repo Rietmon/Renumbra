@@ -238,7 +238,7 @@ bool cInit::Init(tString asCommandLine)
 	}*/
 
 	//iResourceBase::SetLogCreateAndDelete(true);
-	SetWindowCaption("Penumbra Loading...");
+	SetWindowCaption("Renumbra Loading...");
 
 	// PERSONAL DIR /////////////////////
 	tWString sPersonalDir = GetSystemSpecialPath(eSystemPath_Personal);
@@ -649,7 +649,7 @@ bool cInit::Init(tString asCommandLine)
 		gbUsingUserSettings = true;
 	}
 
-	SetWindowCaption("Penumbra");
+	SetWindowCaption("Renumbra");
 	
 	return true;
 }

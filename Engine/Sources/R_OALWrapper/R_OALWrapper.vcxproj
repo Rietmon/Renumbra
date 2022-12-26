@@ -95,7 +95,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;HPL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\Renumbra\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;C:\Projects\Renumbra\Engine\Sources\Renumbra\HPL\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Projects\Renumbra\Engine\Sources\R_OALWrapper\OALWrapper\Include;C:\Projects\Renumbra\Engine\SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

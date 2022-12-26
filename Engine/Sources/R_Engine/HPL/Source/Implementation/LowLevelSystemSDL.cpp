@@ -52,6 +52,7 @@
 #include "system/String.h"
 
 #include <clocale>
+#include <iostream>
 
 extern int hplMain(const hpl::tString &asCommandLine);
 
@@ -108,6 +109,7 @@ namespace hpl {
 
 	void cLogWriter::Write(const tString& asMessage)
 	{
+		std::cout << asMessage << std::endl;
 		if(!mpFile) ReopenFile();
 
 		if(mpFile)
