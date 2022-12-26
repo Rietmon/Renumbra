@@ -38,3 +38,5 @@ Engine/Sources/.idea/
 */Binaries/
 */Intermediate/
 /Game/
+
+!Engine/SDK/Libraries/*
