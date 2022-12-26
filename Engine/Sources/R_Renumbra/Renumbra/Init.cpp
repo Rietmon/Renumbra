@@ -379,7 +379,7 @@ bool cInit::Init(tString asCommandLine)
 	mlMaxSoundChannels = mpConfig->GetInt("Sound","MaxSoundChannels",32);
 	mbUseSoundHardware = mpConfig->GetBool("Sound","UseSoundHardware",false);
 	//mbForceGenericSoundDevice = mpConfig->GetBool("Sound", "ForceGeneric", false);
-	mlStreamUpdateFreq = mpConfig->GetInt("Sound","StreamUpdateFreq",10);
+	mlStreamUpdateFreq = mpConfig->GetInt("Sound","StreamUpdateFreq",40); //Rietmon: TODO: I dont know why here was 10. Now will be 40
 	mbUseSoundThreading = mpConfig->GetBool("Sound","UseThreading",true);
 	//mbUseVoiceManagement = mpConfig->GetBool("Sound","UseVoiceManagement", true);
 	mlMaxMonoChannelsHint = mpConfig->GetInt("Sound","MaxMonoChannelsHint",0);
